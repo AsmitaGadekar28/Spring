@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+  <bean id="emp" class="com.entity.Employee">
+  <constructor-arg index="0" value="101"></constructor-arg>
+   <constructor-arg index="1" value="Asmita"></constructor-arg>
+   <constructor-arg index="2" value="45000"></constructor-arg>
+   <constructor-arg index="3" value="pune"></constructor-arg>
+    <constructor-arg index="4" value="2342354"></constructor-arg>
+   <constructor-arg  ref="c"></constructor-arg>
+  
+  </bean>
+  
+   <bean id="c" class="com.entity.Country">
+   <constructor-arg index="0" value="91"></constructor-arg>
+      <constructor-arg index="1" value="india"></constructor-arg>
+   </bean>
+</beans>
